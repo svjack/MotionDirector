@@ -480,6 +480,20 @@ Inference with spatial path learned from reference image and temporal path learn
 ```bash
 python MotionDirector_inference_multi.py --model /path/to/the/foundation/model  --prompt "Your prompt" --spatial_path_folder /path/to/the/trained/MotionDirector/spatial/lora/ --temporal_path_folder /path/to/the/trained/MotionDirector/temporal/lora/ --noise_prior 0.
 ```
+
+```bash
+python MotionDirector_inference_multi.py --model models/zeroscope_v2_576w  --prompt "A car is running on the road." --spatial_path_folder outputs/train/train_2024-11-14T12-46-28/spatial/lora --temporal_path_folder outputs/train/train_2024-11-14T12-49-37/temporal/lora --noise_prior 0.
+```
+
+
+![A_car_is_running_on_the_road_3161085](https://github.com/user-attachments/assets/c9e4df8b-3af5-43a9-b953-7d5f5dc7676b)
+
+```bash
+python MotionDirector_inference_multi.py --model models/zeroscope_v2_576w  --prompt "A car is running on the road." --spatial_path_folder outputs/train/train_2024-11-14T12-49-37/spatial/lora --temporal_path_folder outputs/train/train_2024-11-14T12-49-37/temporal/lora --noise_prior 0.
+```
+![A_car_is_running_on_the_road_6400200](https://github.com/user-attachments/assets/2f5acec1-d702-42c6-ac6b-ac1ec1f19340)
+
+
 ### Example
 Download the pre-trained weights.
 ```bash
