@@ -106,11 +106,16 @@ models to generate diverse videos with this motion.
 
 ## Setup
 ### Requirements
+```shell
+sudo apt-get update && sudo apt-get install cbm git-lfs ffmpeg
+```
 
 ```shell
 # create virtual environment
 conda create -n motiondirector python=3.8
 conda activate motiondirector
+pip install ipykernel
+python -m ipykernel install --user --name motiondirector --display-name "motiondirector"
 # install packages
 pip install -r requirements.txt
 ```
