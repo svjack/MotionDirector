@@ -116,6 +116,7 @@ conda create -n motiondirector python=3.8
 conda activate motiondirector
 pip install ipykernel
 python -m ipykernel install --user --name motiondirector --display-name "motiondirector"
+git clone https://github.com/svjack/MotionDirector && cd MotionDirector
 # install packages
 pip install -r requirements.txt
 ```
